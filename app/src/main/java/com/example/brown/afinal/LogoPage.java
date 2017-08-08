@@ -46,11 +46,11 @@ public class LogoPage extends Activity {
 
                 // Start your app main activity
 
-                if (pass == false) {
+                if (!pass) {
 
                     Intent intent = new Intent(LogoPage.this, PasswordScreen.class);
                     startActivity(intent);
-                } else if(pass == true){
+                } else if(pass){
 
                     Intent i = new Intent(LogoPage.this, MainActivity.class);
                     startActivity(i);

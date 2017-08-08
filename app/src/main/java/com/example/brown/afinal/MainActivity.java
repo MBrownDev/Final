@@ -111,6 +111,8 @@ public class MainActivity extends AppCompatActivity{
 
     public void sendMessage(View view){
 
+        Intent intent = new Intent(this,MessageService.class);
+        startService(intent);
     }
 
     public void mapWindow(View view){
